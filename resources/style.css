@@ -5,6 +5,7 @@ body {
   color: SeaShell;
   background-color: black;
   opacity: 0.9;
+  margin: 0;
 }
 
 /* Header */
@@ -14,7 +15,28 @@ header {
   width: 100%;
   border-bottom: 1px solid seashell;
   background-color: black;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
 }
+
+.logo {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+nav {
+  padding-right: 10px;
+}
+
+header a {
+  color: seashell;
+}
+
+nav span {
+  margin: 10px;
+}
+
 
 /* Mission Section */
 .mission {
@@ -27,9 +49,13 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  top: 70px;
+
 }
 
-.mission h2, h4 {
+.mission h4,
+.mission h2 {
   background-color: black;
   margin: 0;
   width: 100%;
@@ -39,15 +65,35 @@ header {
 
 /*Tea Section*/
 .tea {
-  background-color: yellow;
   width: 1000px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  top: 70px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.tea h2,h4 {
-  width: 1200px;
+.tea h2 {
+  margin: 0;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
 }
 
 /* Locations */
@@ -62,6 +108,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  top: 70px;
 }
 
 .location h2 {
@@ -84,17 +132,25 @@ header {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 15px;
-
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
 }
+
 /* Contact */
 .contact {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  height: 200px;
+  position: relative;
+  top: 70px;
 }
 
 /* Footer */
 footer {
   padding-left: 20px;
   text-align: left;
+  position: relative;
+  top: 70px;
 }
